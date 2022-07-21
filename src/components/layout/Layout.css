@@ -1,5 +1,4 @@
 .layout-header {
-  background-color: white;
   border-bottom-width: 1px;
   height: 64px;
   position: sticky;
@@ -8,12 +7,13 @@
 
 .layout-main {
   margin-left: 5%;
-  margin-right: 40%;
+  margin-right: 5%;
   max-width: 100%;
   min-height: calc(100vh - 128px);
 }
 
 .layout-footer {
+  color: whitesmoke;
   align-items: center;
   border-top-width: 1px;
   display: flex;

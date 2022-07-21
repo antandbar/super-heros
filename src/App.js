@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout  from './components/layout/Layout';
-import HerosPage from './components/HerosPage/HerosPage';
+import HerosPage from './components/superheros/HerosPage/HerosPage';
 
 function App() {
   return (
