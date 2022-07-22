@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { getCharacters } from '../service';
 import Gallery from '../../common/Gallery';
@@ -6,6 +7,7 @@ import HeroCharacters from './HeroCharacters';
 import Page from '../../layout/Page';
 
 const HerosPage = () => {
+  const navigate = useNavigate();
   const [characters, setCharacters] = useState(null);
 
   useEffect(() => {
@@ -16,7 +18,7 @@ const HerosPage = () => {
       })
 
       .catch(() => {
-        //navigate('/404');
+        navigate('/404');
       });
   }, []);
 
