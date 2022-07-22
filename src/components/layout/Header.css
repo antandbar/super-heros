@@ -1,6 +1,7 @@
 .header {
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .header-logo {

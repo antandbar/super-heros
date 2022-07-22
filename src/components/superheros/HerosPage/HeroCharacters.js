@@ -3,16 +3,16 @@ import './HeroCharacters.css';
 
 const HeroCharacters = ({ characters }) => {
   return (
-    <div className="hero-characters-container">
-    
-        {characters?.map(character => (
-          <div key={character.id} className="hero-characters-img-name">
-               <img className='hero-characters-img' src={`${character.thumbnail.path}.${character.thumbnail.extension}`} alt={character.name} />
-               <span className='hero-characters-name'>{character?.name}</span> 
-         </div>
-         
-        ))}
-     
+    <div className="hero-characters-grid">
+      {characters?.map(character => (
+        <div key={character.id} className="hero-characters-item">
+          <img
+            src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+            alt={character.name}
+          />
+          <span>{character?.name}</span>
+        </div>
+      ))}
     </div>
   );
 };

@@ -1,24 +1,33 @@
-.hero-characters-container {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+.hero-characters-grid {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.hero-characters-img-name {
-    display: flex;
-    flex-direction: column;
+.hero-characters-item {
+  display: flex;
+  flex-direction: column;
 }
-.hero-characters-img {
+.hero-characters-item img {
   width: 15rem;
   height: 15rem;
-  border-radius: 10%; 
+  border-radius: 10%;
   margin-right: 1rem;
 }
 
-.hero-characters-name {
-    padding: 1rem;
-    text-align: center;
-    color: whitesmoke;
+.hero-characters-item span {
+  padding: 1rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+  .hero-characters-item img {
+    filter: grayscale(40%);
+  }
+  .hero-characters-item:hover img {
+    filter: none;
+  }
 }
