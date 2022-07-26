@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '@mui/material/Button';
+
 import { getCharacters } from '../service';
 import Gallery from '../../common/Gallery';
 import HeroCharacters from './HeroCharacters';
@@ -28,7 +28,6 @@ const HerosPage = () => {
         {/*  <Gallery urlComic={urlComic} /> */}
         <HeroCharacters characters={characters} />
         <p>This is test</p>
-        <Button variant="contained">Hello World</Button>
       </Fragment>
     </Page>
   );
