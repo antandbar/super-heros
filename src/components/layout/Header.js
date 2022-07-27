@@ -1,11 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import './Header.css';
-
 import logo from '../../assets/marvel_logo.png';
 
-import './Header.css';
-/* import AuthButton from '../auth/AuthButton'; */
+
 
 function Header({ className }) {
   return (
