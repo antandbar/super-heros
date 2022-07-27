@@ -2,7 +2,6 @@ import { Fragment, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { getCharacters } from '../service';
-import Gallery from '../../common/Gallery';
 import HeroCharacters from './HeroCharacters';
 import Page from '../../layout/Page';
 
@@ -14,7 +13,6 @@ const HerosPage = () => {
     getCharacters()
       .then(characters => {
         setCharacters(characters.data.results);
-        //console.log(characters.data.results);
       })
 
       .catch(() => {
@@ -25,7 +23,6 @@ const HerosPage = () => {
   return (
     <Page title="SUPER - HEROS">
       <Fragment>
-        {/*  <Gallery urlComic={urlComic} /> */}
         <HeroCharacters characters={characters} />
         <p>This is test</p>
       </Fragment>
