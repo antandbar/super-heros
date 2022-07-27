@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@400;700&display=swap');
+
+.title-grid {
+  border-radius: 20px;
+  height: 4rem;
+  margin-bottom: 2rem;
+}
 .title {
   text-align: center;
   color:whitesmoke;
-  border-bottom-width: 1px;
-  height: 52px;
-  padding: 0 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Mochiy Pop One';
+  font-size: 700;
+
 }

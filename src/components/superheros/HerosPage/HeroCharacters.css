@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .hero-characters-item {
@@ -23,11 +23,14 @@
   color: whitesmoke;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .hero-characters-item img {
     filter: grayscale(40%);
   }
   .hero-characters-item:hover img {
     filter: none;
+  }
+  .hero-characters-grid {
+    justify-content: flex-start;
   }
 }

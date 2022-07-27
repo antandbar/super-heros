@@ -10,7 +10,6 @@ import { getCharacter } from '../service';
 import Btn from '../../common/Btn';
 import './HeroPage.css';
 
-
 const HeroPage = () => {
   const { name } = useParams();
   const navigate = useNavigate();
@@ -32,9 +31,9 @@ const HeroPage = () => {
     navigate('/superheros');
   };
   return (
-    <Page title="HERO">
-      <div className='hero-page-grid'>
-        <Card sx={{ maxWidth: 500 }}>
+    <Page title="SUPER - HERO">
+      <div className="hero-page-grid">
+        <Card sx={{ maxWidth: 600 }}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -52,7 +51,9 @@ const HeroPage = () => {
             </CardContent>
           </CardActionArea>
         </Card>
-        <Btn onClick={returnSuperHeros}>Return Super-Heros</Btn>
+        <div className="hero-page-div-btn">
+          <Btn onClick={returnSuperHeros}>Return Super-Heros</Btn>
+        </div>
       </div>
     </Page>
   );

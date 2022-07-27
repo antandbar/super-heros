@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Title from '../common/Title';
+import './Page.css';
 
 
 function Page({ title, children }) {
   return (
-    <Fragment>
-      <Title className="title" title={title}></Title>
+    <div className='page-grid'>
+      <Title title={title}></Title>
       <section>{children}</section>
-    </Fragment>
+    </div>
   );
 }
 
