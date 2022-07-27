@@ -20,7 +20,7 @@ const HerosPage = () => {
       .catch(() => {
         navigate('/404');
       });
-  }, []);
+  }, [navigate]);
 
   return (
     <Page title="SUPER - HEROS">
