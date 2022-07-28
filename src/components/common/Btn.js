@@ -8,22 +8,23 @@ const Btn = styled('button')(({ theme }) => ({
   color: 'white',
   [theme.breakpoints.up('xs')]: {
     height: 48,
-    width: 300,
+    width: '50%',
   },
   [theme.breakpoints.up('sm')]: {
     height: 48,
-    width: 600,
-  },
+    width: '100%',
+  
   '&:hover': {
     backgroundColor: '#ff0000',
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    margin: '1px',
+    margin: '0.5px',
     fontSize: '16px',
     fontWeight: 'bold',
   },
+},
 }));
 
 export default Btn;
