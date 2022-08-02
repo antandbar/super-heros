@@ -52,7 +52,7 @@ const HeroPage = () => {
           </CardActionArea>
         </Card>
         <div className="hero-page-div-btn">
-          <Btn onClick={returnSuperHeros}>Return Super-Heros</Btn>
+          <Btn onClick={ returnSuperHeros }>Return Super-Heros</Btn>
         </div>
       </div>
     </Page>

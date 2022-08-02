@@ -24,7 +24,6 @@ const HerosPage = () => {
     <Page title="SUPER - HEROS">
       <Fragment>
         <HeroCharacters characters={characters} />
-        <p>This is test</p>
       </Fragment>
     </Page>
   );
