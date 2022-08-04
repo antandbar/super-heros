@@ -5,7 +5,7 @@ import HeroPage from './components/superheros/HeroPage/HeroPage';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Routes>
         <Route path="/superheros" element={<Layout />}>
           <Route index element={<HerosPage />} />
