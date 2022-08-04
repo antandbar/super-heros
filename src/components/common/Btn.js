@@ -20,7 +20,6 @@ const Btn = styled('button')(({ theme }) => ({
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    margin: '0.5px',
     fontSize: '16px',
     fontWeight: 'bold',
   },
