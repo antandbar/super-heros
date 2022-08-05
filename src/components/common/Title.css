@@ -2,7 +2,8 @@
 
 .title-grid {
   border-radius: 20px;
-  height: 4rem;
+  min-height: 4rem; 
+  max-height: 6rem; 
   margin-bottom: 2rem;
 }
 .title {
