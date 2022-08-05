@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
+import Spinner from '../../common/spinner';
 import './HeroCharacters.css';
 
-const HeroCharacters = ({ characters }) => {
+const HeroCharacters = ({ characters, isLoading }) => {
   return (
     <div className="hero-characters-grid">
+      {isLoading && <Spinner />}
       {characters?.map(character => (
         <div key={character.id} className="hero-characters-item">
            <Link to={`/superheros/${character?.name}`}>

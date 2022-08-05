@@ -1,6 +1,5 @@
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { getCharacters } from '../service';
 import HeroCharacters from './HeroCharacters';
 import Page from '../../layout/Page';
@@ -8,13 +7,14 @@ import Page from '../../layout/Page';
 const HerosPage = () => {
   const navigate = useNavigate();
   const [characters, setCharacters] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getCharacters()
       .then(characters => {
         setCharacters(characters.data.results);
+        setIsLoading(false);
       })
-
       .catch(() => {
         navigate('/404');
       });
@@ -22,9 +22,7 @@ const HerosPage = () => {
 
   return (
     <Page title="SUPER - HEROS">
-      <Fragment>
-        <HeroCharacters characters={characters} />
-      </Fragment>
+      <HeroCharacters characters={characters} isLoading={isLoading} />
     </Page>
   );
 };
